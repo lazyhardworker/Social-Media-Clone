@@ -814,8 +814,24 @@ body{
     .main-content{
         flex-basis: 100%;
     }
-    .story, .story2,.story3,.story4,.story5 img{
+        .story2 img{
         width: 20px;
+        height: 20px;
+        border-width: 3px;
+    }
+    .story3 img{
+        width: 20px;
+        height: 20px;
+        border-width: 3px;
+    }
+    .story4 img{
+        width: 20px;
+        height: 20px;
+        border-width: 3px;
+    }
+    .story5 img{
+        width: 20px;
+        height: 20px;
         border-width: 3px;
     }
     .story, .story2,.story3,.story4,.story5 p{
