@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BlogBook</title>
+    <link rel="icon" href="img/icon1.png">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+<script src="https://kit.fontawesome.com/538a5e7cc4.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <nav>
+        <div class="nav-left"><a href="index.html"><img src="img/gbook.png" class="logo"></a>
+            <ul>
+                <li><img src="images/notification.png"></li>
+                <li><img src="images/inbox.png"></li>
+                <li><img src="img/facebook-watch.png"></li>
+            </ul>
+        </div>
+        <div class="nav-right">
+            <div class="search-box">
+                <div class="search-icon">
+                    <i class='bx bx-search'></i>
+                </div>
+                    <input type="text" placeholder="Search" class="search">
+            </div>
+
+                <div class="profile-pic online" onclick="MenuToggle()">
+                    <img src="img/profile.jpg" class="profile">
+                </div>
+            
+        </div>
+<!--settings-dropdown menu-->
+        <div class="settings-menu">
+
+            <div id="dark-btn">
+                <span></span>
+            </div>
+
+            <div class="settings-menu-inner">
+            <div class="user-profile">
+                <img src="img/profile.jpg">
+                <div>
+                    <p>Ashutosh Chaudhary</p>
+                    <a href="profile.html">See your profile</a>
+                </div>
+            </div>
+            <hr>
+            <div class="user-profile">
+                <img src="img/feedback.svg">
+                <div>
+                    <p>Give Feedback</p>
+                    <a href="#">Help us to improve the design.</a>
+                </div>
+            </div>
+            <hr>
+            <div class="setting-links">
+                <img src="img/settings.svg" class="settings-icon">
+                <a href="#">Settings & Privacy</a><img src="img/arrow.svg" width="10px" class="arrow">
+            </div>
+            
+            <div class="setting-links">
+                <i class="fa-solid fa-circle-question"></i>
+                <a href="#">Help & Support</a><img src="img/arrow.svg" width="10px" class="arrow">
+            </div>
+            
+            <div class="setting-links">
+                <i class="fa-solid fa-circle-half-stroke"></i>
+                <a href="#">Display & Accessiblity</a><img src="img/arrow.svg" width="10px" class="arrow">
+            </div>
+
+            <div class="setting-links">
+                <i class="fa-solid fa-right-from-bracket"></i>
+                <a href="#">Logout</a><img src="img/arrow.svg" width="10px" class="arrow">
+            </div>
+        </div>
+        </div>
+
+    </nav>
+
+
+    <div class="container">
+        <div class="left-sidebar">
+            <div class="imp-links">
+                <a href="#"><i class='bx bx-news'></i> News Feed</a>
+                <a href="#"><i class='bx bxs-user'></i> Friends</a>
+                <a href="#"><i class='bx bxs-group'></i> Groups</a>
+                <a href="#"><i class='bx bx-store-alt'></i> MarketPlace</a>
+                <a href="#"><i class='bx bxs-videos'></i> Watch</a>
+                <a href="#">See More</a>
+            </div>
+            <div class="shortcut-links">
+                <p>Your Shortcuts</p>
+                <a href="#"><img src="img/developer.jpg">Dev Posts</a>
+                <a href="#"><img src="img/designer.jpg">Pro Web Designs</a>
+                <a href="#"><img src="img/experts.jpg">Experts Community</a>
+                <a href="#"><img src="img/tutor.jpg">Online Tutor</a>
+            </div>
+        </div>
+
+        <div class="main-content">
+            <div class="story-gallery">
+                <div class="story">
+                    <img src="img/add.png">
+                    <p>Post Story</p>
+                </div>
+                <div class="story2"><img src="img/member-2.jpg"><p>Jason</p></div>
+                <div class="story3"><img src="img/member-1.jpg"><p>Jackson</p></div>
+                <div class="story4"><img src="img/member-4.jpg"><p>Anand</p></div>
+                <div class="story5"><img src="img/member-5.jpg"><p>Alisa</p></div>
+            </div>
+
+            <div class="write-post-container">
+                <div class="user-profile">
+                    <img src="img/profile.jpg">
+                    <div>
+                        <p>Ashutosh Chaudhary</p>
+                        <small>Public <i class='bx bxs-down-arrow'></i></small>
+                    </div>
+                </div>
+                <div class="post-input-container"><textarea rows="2" placeholder="What's on you mind, Ashutosh?"></textarea>
+                <div class="add-post-links">
+                    <a href="#"><i class='bx bxs-video-plus'></i> Live Video</a>
+                    <a href="#"><i class="fa-solid fa-camera"></i> Photos/Video</a>
+                    <a href="#"><i class="fa-regular fa-face-smile"></i> Feeling/Activity</a>
+                </div>
+                
+                
+                </div>
+            </div>
+
+            <div class="post-container">
+                <div class="post-row">
+                    <div class="user-profile">
+                        <img src="img/profile.jpg">
+                        <div>
+                            <p>Ashutosh Chaudhary</p>
+                           <span>June 24 2024, 13:40pm</span>
+                        </div> 
+                    </div>
+                    <a href="#"><i class="fa-solid fa-ellipsis-vertical"></i></a>
+                </div>
+                
+                <p class="post-text">It's amazing spending days like this chilling, vibing <span>@beach</span> with music with family. <span><a href="#">#familytime</a> <a href="#">#holidays</a></span></p>
+                <img src="img/holiday.jpg" class="post-img">
+
+                <div class="post-row">
+                    <div class="activity-icon">
+                       
+                        <div><img src="img/love.svg" alt=""> 120</div>
+
+                        <div><i class='bx bx-comment'></i> 75</div>
+
+                        <div><i class="fa-solid fa-share"></i> 10</div>
+                        
+                    </div>
+                    <div class="post-profile-icon">
+                        <img src="img/profile.jpg">
+                        <i class='bx bxs-down-arrow' style="font-size: 12px;"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="post-container">
+                <div class="post-row">
+                    <div class="user-profile">
+                        <img src="img/member-1.jpg">
+                        <div>
+                            <p>Jackson Chang</p>
+                           <span>June 24 2024, 11:00am</span>
+                        </div> 
+                    </div>
+                    <a href="#"><i class="fa-solid fa-ellipsis-vertical"></i></a>
+                </div>
+                
+                <p class="post-text">Reminishing about some of the award I won in sports and academics when i was in my high school. <span><a href="#">#achievement</a> <a href="#">#hardwork</a></span></p>
+                <img src="img/awards.jpg" class="post-img">
+
+                <div class="post-row">
+                    <div class="activity-icon">
+                       
+                        <div><img src="img/wow.svg" alt=""> 120</div>
+
+                        <div><i class='bx bx-comment'></i> 88</div>
+
+                        <div><i class="fa-solid fa-share"></i> 45</div>
+                        
+                    </div>
+                    <div class="post-profile-icon">
+                        <img src="img/member-1.jpg">
+                        <i class='bx bxs-down-arrow' style="font-size: 12px;"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="post-container">
+                <div class="post-row">
+                    <div class="user-profile">
+                        <img src="img/member-3.jpg">
+                        <div>
+                            <p>Clark Greyson</p>
+                           <span>June 24 2024, 10:00am</span>
+                        </div> 
+                    </div>
+                    <a href="#"><i class="fa-solid fa-ellipsis-vertical"></i></a>
+                </div>
+                
+                <p class="post-text">Connecting with nature<span>@hills</span>together with friends. <span><a href="#">#friendstime</a> <a href="#">#nature</a></span></p>
+                <img src="img/hike.jpg" class="post-img">
+
+                <div class="post-row">
+                    <div class="activity-icon">
+                       
+                        <div><img src="img/love.svg" alt=""> 152</div>
+
+                        <div><i class='bx bx-comment'></i> 99</div>
+
+                        <div><i class="fa-solid fa-share"></i> 58</div>
+                        
+                    </div>
+                    <div class="post-profile-icon">
+                        <img src="img/member-3.jpg">
+                        <i class='bx bxs-down-arrow' style="font-size: 12px;"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="post-container">
+                <div class="post-row">
+                    <div class="user-profile">
+                        <img src="img/member-5.jpg">
+                        <div>
+                            <p>Alisa Rose</p>
+                           <span>June 23 2024, 11:00pm</span>
+                        </div> 
+                    </div>
+                    <a href="#"><i class="fa-solid fa-ellipsis-vertical"></i></a>
+                </div>
+                
+                <p class="post-text">Movie after so long. It was as if I forgot what a movies really is? <span><a href="#">#refreshed</a> <a href="#">#offwork</a></span></p>
+                <img src="img/movie.jpg" class="post-img">
+
+                <div class="post-row">
+                    <div class="activity-icon">
+                       
+                        <div><img src="img/love.svg" alt=""> 225</div>
+
+                        <div><i class='bx bx-comment'></i> 108</div>
+
+                        <div><i class="fa-solid fa-share"></i> 98</div>
+                        
+                    </div>
+                    <div class="post-profile-icon">
+                        <img src="img/member-5.jpg">
+                        <i class='bx bxs-down-arrow' style="font-size: 12px;"></i>
+                    </div>
+                </div>
+            </div>
+
+            <button type="button" class="load-more-btn">Load More</button>
+        </div>
+
+        <div class="right-sidebar">
+
+            <div class="sidebar-title">
+                <h4>Events</h4>
+                <a href="#">See All</a>
+            </div>
+
+
+            <div class="event">
+                <div class="left-event">
+                    <h3>18</h3>
+                    <span>March</span>
+                </div>
+                <div class="right-event">
+                    <h4>Social Media</h4>
+                    <p><i class="fa-solid fa-location-dot"></i> Willson Tech Park</p>
+                    <a href="#">More Info</a>
+                </div>
+            </div>
+
+            <div class="event">
+                <div class="left-event">
+                    <h3>22</h3>
+                    <span>June</span>
+                </div>
+                <div class="right-event">
+                    <h4>Mobile Marketing</h4>
+                    <p><i class="fa-solid fa-location-dot"></i> Willson Tech Park</p>
+                    <a href="#">More Info</a>
+                </div>
+            </div>
+
+            <div class="sidebar-title">
+                <h4>Advertisement</h4>
+                <a href="#">Close</a>
+        </div>
+        <img src="img/cook.jpg" class="sidebar-ad">
+
+        <div class="sidebar-title">
+            <h4>Conversations</h4>
+            <a href="#">Hide</a>
+        </div>
+
+        <div class="online-list">
+            <div class="online">
+                <img src="img/member-1.jpg">
+            </div>
+            <p>Jackson Chang</p>
+        </div>
+
+        <div class="online-list">
+            <div class="online">
+                <img src="img/member-2.jpg">
+            </div>
+            <p>Jason Marshall</p>
+        </div>
+
+        <div class="online-list">
+            <div class="online">
+                <img src="img/member-3.jpg">
+            </div>
+            <p>Davi Leno</p>
+        </div>
+
+        <div class="online-list">
+            <div class="online">
+                <img src="img/member-4.jpg">
+            </div>
+            <p>Clark Greyson</p>
+        </div>
+
+        <div class="online-list">
+            <div class="online">
+                <img src="img/member-5.jpg">
+            </div>
+            <p>Alisa Rose</p>
+        </div>
+    </div>
+    </div>
+    <div class="footer">
+        <p>Copyright 2024 - Ashutosh Chaudhary</p>
+    </div>
+
+</body>
+</html>
